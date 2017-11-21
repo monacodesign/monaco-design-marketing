@@ -1,0 +1,203 @@
+/*////Monaco////
+*/
+
+
+
+body{
+  padding: 0;
+  margin:0;
+}
+
+nav {
+  text-align: center;
+}
+nav {
+  background: turquoise;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 80px;
+}
+
+
+
+
+
+nav ul {
+  /*border: 5px solid lightcoral;*/
+  display: flex;
+  flex-direction: row-reverse;
+justify-content: space-around;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+width: 75%;
+}
+
+/*
+////////new added for my hamburger menu///*/
+
+#hamburger, #close {
+  font-size: 50px;
+  /*text-decoration: none;
+float: right;*/
+  display: inline-block;
+}
+
+#hamburger {
+  color: red;
+  text-decoration: none;
+}
+
+
+
+.open-nav {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  background: turquoise;
+  flex-direction: column;
+}
+
+
+#close{
+color: purple;
+display: none;
+
+}
+
+.hamburger, .close {
+  display: none;
+}
+
+
+main{
+  background: white;
+}
+
+.big{
+  width:400px !important;
+  color:blue;
+
+}
+
+li {
+  font-size: 18px;
+  /*display: inline-block;*/
+  padding: 30px 50px;
+  /*color: turquoise;
+  background-color: white;*/
+}
+
+li a {
+  text-decoration: none;
+}
+
+
+
+
+h1{
+  margin: 0;
+  font-size: 20px;
+}
+
+ header{
+  background: white;
+  text-align: center;
+}
+
+header img{
+  width: 180px;
+  margin-top: 100px;
+}
+
+aside{
+  background: white;
+}
+.social {
+  padding: 30px;
+  text-align: center;
+}
+.social a{
+  padding: 20px;
+  font-size: 40px;
+  color: white;
+}
+.social a:hover{
+  color: yellow;
+}
+
+
+
+footer{
+  background:turquoise;
+  font-style: italic;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo{
+  width: 20px;
+}
+
+.wrapper{
+  display: flex;
+}
+
+
+main{
+padding: 100px 50px;
+}
+
+
+/*// for services page*/
+.services{
+background-color: white;
+
+}
+
+.bio{
+width: 880px;
+justify-content: fully justified;
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+/*// No media query since this is the default in Bootstrap*/
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+  nav ul {
+  display: none;
+}}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  #hamburger{
+    display: none;
+  }
+}
+
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+   #hamburger{
+    display: none;
+  } }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+#hamburger{
+  display: none;
+}
+}
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  #hamburger{
+    display: none;
+  }
+}
